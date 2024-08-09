@@ -6,6 +6,7 @@ import NavBar from "./component/NavBar";
 import HeroSection from "./component/HeroSection";
 import Packages from "./component/PackageSectoin";
 import BookingCard from "./component/booking.sheet";
+import Footer from "./component/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         <HeroSection />
         <BookingCard/>
         <body>{children}</body>
+        <Footer/>
       </ChakraProvider>
      
 
