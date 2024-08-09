@@ -1,77 +1,217 @@
 "use client"
-import React, {useEffect} from 'react';
-import { Box, SimpleGrid, Container, Heading, Button, Text, Image, Divider } from '@chakra-ui/react';
+import React, { useEffect } from 'react';
+import { Box, SimpleGrid, Avatar, Container, Flex, Heading, Button, Text, Image, Divider, Badge } from '@chakra-ui/react';
 
 
 
 // BookingCard Component
 export default function BookingCard() {
-    
+
     return (
         <>
             <Container maxW="container.xl">
                 <Box mt={20}>
-                    <SimpleGrid columns={{base: 1, lg: 2}} spacing={10} alignItems='center' data-aos='fade-up' data-aos-duration='2000'
+                    <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={10} alignItems='center' data-aos='fade-up' data-aos-duration='2000'
                     >
-                        
-                        <Box >
-                            <Heading mb={5}>Ordinary  Tickets</Heading>
-                            <Text></Text>
-                            <Text>
-                                A 28 room boutique hotel with three tiers of suites each adding an extra layer of comfort. Being a Boutique Hotel, Le Petit Village provides an unprecedented intimate and personalized attention to customers comfort like no other.
-                                A 28 room boutique hotel with three tiers of suites each adding an extra layer of comfort. Being a Boutique Hotel, Le Petit Village provides an unprecedented intimate and personalized attention to customers comfort like no other.
-                                A 28 room boutique hotel with three tiers of suites each adding an extra layer of comfort. Being a Boutique Hotel, Le Petit Village provides an unprecedented intimate and personalized attention to customers comfort like no other.
-                                A 28 room boutique hotel with three tiers of suites each adding an extra layer of comfort. Being a Boutique Hotel, Le Petit Village provides an unprecedented intimate and personalized attention to customers comfort like no other.
-                            </Text>
-                            <Heading>
 
-                                <Button variant='outline' colorScheme='whiteAlpha'>Book Now</Button>
-                            </Heading>
+                        <Box >
+                            <Heading>Flower Boutiquet</Heading>
+                            <Text pb={4}>Flowers will speak your feelings</Text>
+                     
+
+                            <SimpleGrid columns={{ base: 1, lg: 1 }} spacing={4}>
+                                <Box  >
+
+                                    <Flex  alignItems='center'>
+                                        <Avatar size='2xl' src='https://bit.ly/sage-adebayo' />
+                                        <Box ml='3'>
+                                            <Text fontWeight='bold'>
+                                                Small Bouquet
+                                               
+                                            </Text>
+                                            <Text fontSize='sm'>UI Engineer</Text>
+                                            <Badge ml='1' colorScheme='green'>
+                                                UGX: 50,000/=
+                                            </Badge>
+                                        </Box>
+                                    </Flex>
+                                </Box>
+                                <Divider spacing={3} />
+                                <Box>
+
+                                    <Flex alignItems='center'>
+                                        <Avatar size='2xl' src='https://bit.ly/sage-adebayo' />
+                                        <Box ml='3'>
+                                            <Text fontWeight='bold'>
+                                                Medium Bouquet
+
+                                            </Text>
+                                            <Text fontSize='sm'>UI Engineer</Text>
+                                            <Badge ml='1' colorScheme='green'>
+                                                UGX: 90,000/=
+                                            </Badge>
+                                        </Box>
+                                    </Flex>
+                                </Box>
+                                <Divider spacing={3} />
+                                <Box pb={5}>
+                                    <Flex alignItems='center'>
+                                        <Avatar size='2xl' src='https://bit.ly/sage-adebayo' />
+                                        <Box ml='3'>
+                                            <Text fontWeight='bold'>
+                                                Large Bouquet
+
+                                            </Text>
+                                            <Text fontSize='sm'>UI Engineer</Text>
+                                            <Badge variant='solid' p={2} ml='1' colorScheme='green'>
+                                                UGX: 150,000/=
+                                            </Badge>
+                                        </Box>
+                                    </Flex>
+                                </Box>
+                            </SimpleGrid>
+
+
+                            <Button variant='outline' colorScheme='teal.700'>Book Now</Button>
+
 
                         </Box>
                         <Box>
                             <Image rounded={20} src='/all-white-balloon-wedding-arch-balloon-garland-kit-927032.webp' alt='events' />
                         </Box>
-                    
+
                         <Box>
                             <Image rounded={20} src='/pexels-photo-3051573.webp' alt='events' />
                         </Box>
                         <Box >
-                            <Heading mb={5}>VIP Tickets</Heading>
-                            <Text>
-                                A 28 room boutique hotel with three tiers of suites each adding an extra layer of comfort. Being a Boutique Hotel, Le Petit Village provides an unprecedented intimate and personalized attention to customers comfort like no other.
-                                A 28 room boutique hotel with three tiers of suites each adding an extra layer of comfort. Being a Boutique Hotel, Le Petit Village provides an unprecedented intimate and personalized attention to customers comfort like no other.
-                                A 28 room boutique hotel with three tiers of suites each adding an extra layer of comfort. Being a Boutique Hotel, Le Petit Village provides an unprecedented intimate and personalized attention to customers comfort like no other.
-                                A 28 room boutique hotel with three tiers of suites each adding an extra layer of comfort. Being a Boutique Hotel, Le Petit Village provides an unprecedented intimate and personalized attention to customers comfort like no other.
-                            </Text>
-                            <Heading>
+                            <Heading>Flower Boutiquet</Heading>
+                            <Text pb={4}>Flowers will speak your feelings</Text>
 
-                                <Button variant='outline' colorScheme='whiteAlpha'>Book Now</Button>
-                            </Heading>
+
+                            <SimpleGrid columns={{ base: 1, lg: 1 }} spacing={4}>
+                                <Box  >
+
+                                    <Flex alignItems='center'>
+                                        <Avatar size='2xl' src='https://bit.ly/sage-adebayo' />
+                                        <Box ml='3'>
+                                            <Text fontWeight='bold'>
+                                                Small Bouquet
+
+                                            </Text>
+                                            <Text fontSize='sm'>UI Engineer</Text>
+                                            <Badge ml='1' colorScheme='green'>
+                                                UGX: 50,000/=
+                                            </Badge>
+                                        </Box>
+                                    </Flex>
+                                </Box>
+                                <Divider spacing={3} />
+                                <Box>
+
+                                    <Flex alignItems='center'>
+                                        <Avatar size='2xl' src='https://bit.ly/sage-adebayo' />
+                                        <Box ml='3'>
+                                            <Text fontWeight='bold'>
+                                                Medium Bouquet
+
+                                            </Text>
+                                            <Text fontSize='sm'>UI Engineer</Text>
+                                            <Badge ml='1' colorScheme='green'>
+                                                UGX: 90,000/=
+                                            </Badge>
+                                        </Box>
+                                    </Flex>
+                                </Box>
+                                <Divider spacing={3} />
+                                <Box pb={5}>
+                                    <Flex alignItems='center'>
+                                        <Avatar size='2xl' src='https://bit.ly/sage-adebayo' />
+                                        <Box ml='3'>
+                                            <Text fontWeight='bold'>
+                                                Large Bouquet
+
+                                            </Text>
+                                            <Text fontSize='sm'>UI Engineer</Text>
+                                            <Badge variant='solid' p={2} ml='1' colorScheme='green'>
+                                                UGX: 150,000/=
+                                            </Badge>
+                                        </Box>
+                                    </Flex>
+                                </Box>
+                            </SimpleGrid>
+
+
+                            <Button variant='outline' colorScheme='teal.700'>Book Now</Button>
+
 
                         </Box>
                         <Box >
-                            <Heading mb={5}> Table of five.</Heading>
-                            <Text>
-                                A 28 room boutique hotel with three tiers of suites each adding an extra layer of comfort. Being a Boutique Hotel, Le Petit Village provides an unprecedented intimate and personalized attention to customers comfort like no other.
-                                A 28 room boutique hotel with three tiers of suites each adding an extra layer of comfort. Being a Boutique Hotel, Le Petit Village provides an unprecedented intimate and personalized attention to customers comfort like no other.
-                                A 28 room boutique hotel with three tiers of suites each adding an extra layer of comfort. Being a Boutique Hotel, Le Petit Village provides an unprecedented intimate and personalized attention to customers comfort like no other.
-                                A 28 room boutique hotel with three tiers of suites each adding an extra layer of comfort. Being a Boutique Hotel, Le Petit Village provides an unprecedented intimate and personalized attention to customers comfort like no other.
-                               
-                                
-                               
-                            </Text>
-                            <Heading>
+                            <Heading>Flower Boutiquet</Heading>
+                            <Text pb={4}>Flowers will speak your feelings</Text>
 
-                            <Button variant='outline' colorScheme='whiteAlpha'>Book Now</Button>
-                            </Heading>
+
+                            <SimpleGrid columns={{ base: 1, lg: 1 }} spacing={4}>
+                                <Box  >
+
+                                    <Flex alignItems='center'>
+                                        <Avatar size='2xl' src='https://bit.ly/sage-adebayo' />
+                                        <Box ml='3'>
+                                            <Text fontWeight='bold'>
+                                                Small Bouquet
+
+                                            </Text>
+                                            <Text fontSize='sm'>UI Engineer</Text>
+                                            <Badge ml='1' colorScheme='green'>
+                                                UGX: 50,000/=
+                                            </Badge>
+                                        </Box>
+                                    </Flex>
+                                </Box>
+                                <Divider spacing={3} />
+                                <Box>
+
+                                    <Flex alignItems='center'>
+                                        <Avatar size='2xl' src='https://bit.ly/sage-adebayo' />
+                                        <Box ml='3'>
+                                            <Text fontWeight='bold'>
+                                                Medium Bouquet
+
+                                            </Text>
+                                            <Text fontSize='sm'>UI Engineer</Text>
+                                            <Badge ml='1' colorScheme='green'>
+                                                UGX: 90,000/=
+                                            </Badge>
+                                        </Box>
+                                    </Flex>
+                                </Box>
+                                <Divider spacing={3} />
+                                <Box pb={5}>
+                                    <Flex alignItems='center'>
+                                        <Avatar size='2xl' src='https://bit.ly/sage-adebayo' />
+                                        <Box ml='3'>
+                                            <Text fontWeight='bold'>
+                                                Large Bouquet
+
+                                            </Text>
+                                            <Text fontSize='sm'>UI Engineer</Text>
+                                            <Badge variant='solid' p={2} ml='1' colorScheme='green'>
+                                                UGX: 150,000/=
+                                            </Badge>
+                                        </Box>
+                                    </Flex>
+                                </Box>
+                            </SimpleGrid>
+
+
+                            <Button variant='outline' colorScheme='teal.700'>Book Now</Button>
+
 
                         </Box>
                         <Box>
                             <Image rounded={20} src='/white-arbors-ot-zjgj-3964-66_600.avif' alt='events' />
                         </Box>
 
-                      
+
                     </SimpleGrid>
                 </Box>
 

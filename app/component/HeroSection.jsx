@@ -18,7 +18,7 @@ const HeroSection = () => {
     return (
         <Box
             height="100vh"
-            backgroundImage="url('/hero.jpg')"
+            backgroundImage="url('/hero.webp')"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             backgroundAttachment="fixed"

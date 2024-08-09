@@ -24,7 +24,7 @@ const NavBar = () => {
                 color="var(--clr-primary-10)"
                 width={{ base: "100%", md: "80%", lg: "70%" }}
                 maxW="1200px"
-                boxShadow="md"
+                // boxShadow="md"
                 rounded={{ base: 0, md: 100 }}
                 px={4}
              
